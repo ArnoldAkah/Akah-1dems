@@ -6,7 +6,7 @@ jobs:
    steps:
      - name: checkout repo
        uses: actions/checkout@v4
-     - name: list files
+     - name: shell commands
      - run: |
         ls -a
         touch action.txt
