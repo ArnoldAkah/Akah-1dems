@@ -1,4 +1,4 @@
-name: my-action
+name: akah-in-action
 on: push
 jobs:
  build:
@@ -9,9 +9,8 @@ jobs:
      - name: shell commands
        run: |
         ls -a
-        touch action.txt
-        echo "Hello world" > action.txt
-        ls -a
+        touch action.txt && echo "Hello world" > action.txt
+        ls
         cat action.txt
    
     
