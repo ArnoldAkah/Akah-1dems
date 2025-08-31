@@ -7,7 +7,7 @@ jobs:
      - name: checkout repo
        uses: actions/checkout@v4
      - name: shell commands
-     - run: |
+       run: |
         ls -a
         touch action.txt
         echo "Hello world" > action.txt
