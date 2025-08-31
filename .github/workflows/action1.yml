@@ -6,10 +6,11 @@ jobs:
    steps:
      - name: checkout repo
        uses: actions/checkout@v4
-     - name: use node.js
-       uses: actions/setup-node@v4
-       with:
-        node-version: '20.x'
-     - run: npm install
-     - run: npm run build
+     - name: list files
+     - run: |
+        ls -a
+        touch action.txt
+        echo "Hello world" > action.txt
+        cat action.txt
+   
     
