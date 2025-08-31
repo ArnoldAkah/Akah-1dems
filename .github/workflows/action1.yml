@@ -11,6 +11,7 @@ jobs:
         ls -a
         touch action.txt
         echo "Hello world" > action.txt
+        ls -a
         cat action.txt
    
     
